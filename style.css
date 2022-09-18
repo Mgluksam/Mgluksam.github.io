@@ -1,0 +1,80 @@
+body {margin:0;}
+.header
+{
+    width:100%;
+    background-color:#FEA843;
+    height:120px;
+}
+.header img
+{
+    float:left;
+    margin:10px;
+    width:100px;
+    height:100px;
+}
+.header div
+{
+    font-size: 40px;
+    padding-top: 40px;
+}
+.navbar 
+{
+    max-width:960px; 
+    height:45px;
+    margin: 0 auto;
+    background-color:#FEA843;
+    text-align: center;
+}
+.navbar li
+{
+    padding-top:5px;
+    display: inline-block;
+    font-size: 30px;
+}
+.navbar a 
+{
+    text-decoration: none;
+    padding: 20px;
+}
+.list
+{
+    max-width:960px;
+    margin: 0 auto;
+    background-color:#FEA843;
+    text-align: center;
+}
+.column table 
+{
+	max-width:960px;
+    margin: 0 auto;
+	border: 1px solid #dddddd;
+}
+.column th 
+{
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+.column td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+.column .odd{background-color: rgba(255, 245, 0, 0.29);}
+.column .even {background-color: rgba(255, 29, 0, 0.46);}
+.main-form
+{
+    max-width:960px;
+    margin: 0 auto;
+    background-color:#FEA843;
+    text-align: center;
+}
+.footer
+{
+    margin-top:20px;
+    width:100%;
+    background-color:#FEA843;
+    height:20px;
+    text-align: center;
+    font-weight: bold;
+}
