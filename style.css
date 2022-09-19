@@ -1,9 +1,14 @@
-body {margin:0;}
+body 
+{
+    margin:0;
+    background: rgb(96, 176, 255);
+    font-family: monospace;
+}
 .header
 {
     width:100%;
-    background-color:#FEA843;
     height:120px;
+    font-weight: bold;
 }
 .header img
 {
@@ -11,69 +16,87 @@ body {margin:0;}
     margin:10px;
     width:100px;
     height:100px;
+    outline: 5px ridge rgb(68, 73, 190);
 }
 .header div
 {
+    color: aliceblue;
+    line-height: 120px;
     font-size: 40px;
-    padding-top: 40px;
 }
 .navbar 
 {
-    max-width:960px; 
-    height:45px;
-    margin: 0 auto;
-    background-color:#FEA843;
+    background-color: #6399ff;
     text-align: center;
+    margin: 10px auto;
+    outline: 5px ridge rgb(68, 73, 190);
+    max-width:960px; 
+    height:50px;
 }
 .navbar li
 {
-    padding-top:5px;
     display: inline-block;
     font-size: 30px;
 }
 .navbar a 
 {
+    color: aliceblue;
     text-decoration: none;
-    padding: 20px;
+    line-height: 50px;
+    padding: 0px 40px;
 }
 .list
 {
+    color: aliceblue;
+    background-color: #6399ff;
+    outline: 5px ridge rgb(68, 73, 190);
+    box-sizing: border-box;
     max-width:960px;
-    margin: 0 auto;
-    background-color:#FEA843;
+    margin: 10px auto;
     text-align: center;
+}
+.list ol li a
+{
+    text-decoration: none;
+    color: aliceblue;
 }
 .column table 
 {
 	max-width:960px;
     margin: 0 auto;
-	border: 1px solid #dddddd;
+	border: 2px solid rgb(59, 66, 224);
 }
 .column th 
 {
+    color: aliceblue;
 	font-weight: bold;
 	padding: 5px;
-	background: #efefef;
-	border: 1px solid #dddddd;
+	background: #6399ff;
+	border: 2px solid rgb(59, 66, 224);
 }
-.column td {
-	border: 1px solid #dddddd;
+.column td 
+{
+    color: aliceblue;
+	border: 2px solid rgb(59, 66, 224);
 	padding: 5px;
 }
 .column .odd{background-color: rgba(255, 245, 0, 0.29);}
 .column .even {background-color: rgba(255, 29, 0, 0.46);}
 .main-form
 {
+    color: aliceblue;
     max-width:960px;
     margin: 0 auto;
-    background-color:#FEA843;
+    background-color:#6399ff;
+    outline: 5px ridge rgb(68, 73, 190);
     text-align: center;
 }
 .footer
 {
+    color: aliceblue;
     margin-top:20px;
     width:100%;
-    background-color:#FEA843;
+    background-color: black;
     height:20px;
     text-align: center;
     font-weight: bold;
