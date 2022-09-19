@@ -41,7 +41,6 @@ body
 .navbar a 
 {
     color: aliceblue;
-    text-decoration: none;
     line-height: 50px;
     padding: 0px 40px;
 }
@@ -57,7 +56,6 @@ body
 }
 .list ol li a
 {
-    text-decoration: none;
     color: aliceblue;
 }
 .column table 
