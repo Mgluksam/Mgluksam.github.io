@@ -1,0 +1,150 @@
+body 
+{
+    margin:0;
+    background: rgb(96, 176, 255);
+    font-family: monospace;
+}
+@media only screen and (max-width: 750px) 
+{
+    #main-aside-wrapper 
+    {
+        flex-direction: column;
+        display: flex;
+    }
+    #main-aside-wrapper header, .list, .main-form, .navbar
+    {
+        order: -1;
+    }
+    #main-aside-wrapper column
+    {
+        order: 1;
+    }
+    #main-aside-wrapper #nametag
+    {
+        margin-left:auto;
+		margin-right: 10px;
+    }
+    #main-aside-wrapper table, .navbar, .list
+    {
+        width: 100%;
+    }
+	#main-aside-wrapper nav ul
+	{
+		display: flex;
+		margin: auto;
+		flex-direction: column;
+	}
+    #main-aside-wrapper .navbar a
+	{
+		float:left;
+	}
+}
+header
+{
+    width:100%;
+    height:120px;
+    font-weight: bold;
+    margin: auto;
+}
+header img
+{
+    float:left;
+    margin:10px;
+    width:100px;
+    height:100px;
+    outline: 2px ridge rgb(68, 73, 190);
+}
+header div div
+{
+    color: aliceblue;
+    font-size: calc(15px + 2vw);
+}
+.header-content
+{
+	max-width: 960px;
+	margin: auto;
+}
+.header-visual
+{
+	display:flex;
+	align-items:center;
+}
+.navbar 
+{
+    background-color: #6399ff;
+    text-align: center;
+    margin: 10px auto;
+    outline: 2px ridge rgb(68, 73, 190);
+    max-width:960px; 
+}
+.navbar li
+{
+    display: inline-block;
+    font-size: calc(15px + 1vw)
+}
+#myimage2
+{
+	height: 150px;
+	width: 300px;
+}
+.navbar a 
+{
+    color: aliceblue;
+    padding: 0px 10px;
+}
+.list
+{
+    color: aliceblue;
+    background-color: #6399ff;
+    outline: 2px ridge rgb(68, 73, 190);
+    padding-left: 2vw;
+    box-sizing: border-box;
+    max-width:960px;
+    margin: 10px auto;
+    font-size: calc(8px + 1vw)
+}
+.list ol li a
+{
+    color: aliceblue;
+}
+.column table 
+{
+	max-width:960px;
+    margin: 20px auto;
+	outline: 2px solid rgb(59, 66, 224);
+}
+.column th 
+{
+    color: aliceblue;
+	font-weight: bold;
+	padding: 5px;
+	background: #6399ff;
+	border: 2px solid rgb(59, 66, 224);
+}
+.column td 
+{
+    color: aliceblue;
+	border: 2px solid rgb(59, 66, 224);
+	padding: 5px;
+}
+.column .odd{background-color: rgba(255, 245, 0, 0.29);}
+.column .even {background-color: rgba(255, 29, 0, 0.46);}
+.main-form
+{
+    color: aliceblue;
+    max-width:960px;
+    margin: 10px auto;
+    background-color:#6399ff;
+    outline: 2px ridge rgb(68, 73, 190);
+    text-align: center;
+}
+.footer
+{
+    color: aliceblue;
+    margin-top:20px;
+    width:100%;
+    background-color: black;
+    height:20px;
+    text-align: center;
+    font-weight: bold;
+}
