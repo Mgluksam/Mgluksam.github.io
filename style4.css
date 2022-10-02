@@ -1,9 +1,72 @@
+htlm
+{
+    font-size: 10px;
+}
+body
+{
+    font-family: monospace;
+    background: rgb(96, 176, 255);
+}
+nav
+{
+    background-color: #6399ff;
+    outline: 2px ridge rgb(68, 73, 190);
+}
+nav a 
+{
+    color: aliceblue;
+    font-size: calc(15px + 1vw);
+}
+main
+{
+    background-color: #6399ff;
+    outline: 2px ridge rgb(68, 73, 190);
+}
+main ol, a 
+{
+    color: aliceblue; 
+    font-size: calc(8px + 1vw);
+}
+th 
+{
+	font-weight: bold;
+	background: #6399ff;
+	border: 2px solid rgb(59, 66, 224);
+    color:aliceblue;
+}
+td 
+{
+	border: 2px solid rgb(59, 66, 224);
+    color:aliceblue;
+}
+tr:nth-child(even)
+{
+  background-color: rgba(255, 29, 0, 0.46);
+}
+tr:nth-child(odd)
+{
+  background-color: rgba(255, 245, 0, 0.29);
+}
+form
+{
+    color: aliceblue;
+    background-color:#6399ff;
+    outline: 2px ridge rgb(68, 73, 190);
+}
+footer
+{
+    color: aliceblue;
+    background-color: black;
+    font-weight: bold;
+}
+/*
 body 
 {
     margin:0;
     background: rgb(96, 176, 255);
     font-family: monospace;
 }
+
 @media only screen and (max-width: 750px) 
 {
     #main-aside-wrapper 
@@ -46,6 +109,7 @@ header
     font-weight: bold;
     margin: auto;
 }
+
 header img
 {
     float:left;
