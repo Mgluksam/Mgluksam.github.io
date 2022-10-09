@@ -1,0 +1,8 @@
+body,html {
+    font-size: 20px;
+  height: 100%;
+}
+.input-group-prepend
+{
+    border-radius: 10em; !important
+}
