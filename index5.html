@@ -8,25 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
+    <script defer src="script5.js"> </script>
     <link href="style5.css" rel="stylesheet" type="text/css">
 </head>
-
-<script defer>
-    function click1() {
-        let n1, n2, r;
-        n1 = document.getElementById("field1").value;
-        n1 = parseInt(n1);
-        n2 = document.getElementById("field2").value;
-        n2 = parseInt(n2);
-        r = n1 * n2;
-        if (Number.isFinite(r)) {
-            document.getElementById("result").innerHTML = r;
-        } else {
-            document.getElementById("result").innerHTML = "Параметры заданы неверно";
-        }
-
-    }
-</script>
 
 <body>
     <div class="container h-100">
