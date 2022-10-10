@@ -2,3 +2,4 @@ body,html {
     font-size: 20px;
     height: 100%;
 }
+.warning{background-color: rgba(255, 0, 0, 0.42);}

@@ -1,13 +1,13 @@
 function click1() {
     let n1, n2, r;
     n1 = document.getElementById("field1").value;
-    n1 = parseInt(n1);
     n2 = document.getElementById("field2").value;
-    n2 = parseInt(n2);
-    r = n1 * n2;
-    if (Number.isFinite(r)) {
-        document.getElementById("result").innerHTML = r;
+    let temp = new RegExp(/^\d+$/);
+    if (temp.test(n1) && temp.test(n2)) {
+        document.getElementById("result").innerHTML = parseInt(n1) * parseInt(n2);
+        document.getElementById("result").classList.remove("warning");
     } else {
         document.getElementById("result").innerHTML = "Параметры заданы неверно";
+        document.getElementById("result").classList.add("warning");
     }
 }
