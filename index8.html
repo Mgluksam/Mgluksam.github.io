@@ -20,7 +20,7 @@
 
 <body>
     <div class="container text-center my-3">
-        <a href="order" id="orderButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <a href="#" id="orderButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Сделать заказ
         </a>
     </div>
@@ -29,41 +29,35 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="staticBackdropLabel">Форма</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    <button type="button" class="btn-close closeOrder" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="form">
+                    <form class="ajaxForm" id="form" action="https://formcarry.com/s/cAT8SfVkz" method="POST" accept-charset="UTF-8">
                         <div class="mb-3">
                             <label for="InputName" class="form-label">Ваше имя без фамилии и отчества</label>
-                            <input type="text" class="form-control checkReq" id="FormName" aria-describedby="format">
+                            <input type="text" name="name" class="form-control checkReq" id="FormName" aria-describedby="format">
                         </div>
                         <div class="mb-3">
                             <label for="InputEmail1" class="form-label">Адрес электронной почты</label>
-                            <input type="email" class="form-control checkReq" id="FormEmail" aria-describedby="emailHelp" placeholder="name@example.com">
+                            <input type="email" name="email" class="form-control checkReq" id="FormEmail" aria-describedby="emailHelp" placeholder="name@example.com">
                             <div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу электронную почту.</div>
                         </div>
                         <div class="mb-3">
                             <label for="InputPassword1" class="form-label">Пароль</label>
-                            <input type="password" class="form-control checkReq" id="FormPassword">
+                            <input type="password" name="password" class="form-control checkReq" id="FormPassword">
                         </div>
                         <div class="mb-3">
                             <label for="FormControlTextarea1" class="form-label">Сообщение</label>
-                            <textarea class="form-control checkReq" id="FormTextarea" rows="2"></textarea>
+                            <input class="form-control checkReq" name="text" id="FormTextarea" rows="2">
                         </div>
                         <div class="mb-3 mx-1 form-check">
                             <input type="checkbox" class="form-check-input checkReq" id="FormCheck">
                             <label class="form-check-label" for="exampleCheck1">Подтвержаю согласие на обработку персональных данных</label>
                         </div>
-                            <button id="closeOrderButton" type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                            <button id="test1" type="submit" class="btn btn-primary">Отправить</button>
+                        <button id="closeOrderButton" type="button" class="btn btn-secondary closeOrder" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
                     </form>
                 </div>
-                <!--
-                <div class="modal-footer">
-                    <button id="closeOrderButton" type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                    <button id="test1" type="submit" class="btn btn-primary">Отправить</button>
-                </div>
--->
             </div>
         </div>
     </div>
