@@ -90,15 +90,16 @@ document.addEventListener("DOMContentLoaded", function () {
         history.pushState(state, "", state.page) // Объект состояния, описание, относительная ссылка
     });
 
-//    let closeOrder = document.getElementsByClassName("closeOrder");
-//    closeOrder[0].addEventListener('click', function (e) {
-//        history.back();
-//    });
-//    closeOrder[1].addEventListener('click', function (e) {
-//        history.back();
-//    });
+    let closeOrder = document.getElementsByClassName("closeOrder");
+    closeOrder[0].addEventListener('click', function (e) {
+        window.history.back();
+    });
+    closeOrder[1].addEventListener('click', function (e) {
+        window.history.back();
+    });
 
     window.addEventListener('popstate', function (e) { // Обработчик нажатия вперед/назад пользователя
         document.getElementById("closeOrderButton").click();
+        history.forward();
     });
 });
